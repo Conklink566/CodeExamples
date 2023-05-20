@@ -1,0 +1,13 @@
+These code examples are for a house tour simulator.
+
+DoorObject.cs
+Takes into account of where the door is being grabbed, and how the door will be interacted with, like it was being interacted with in real life.
+
+PlayerController.cs
+A Player controller that has a set of different actions available based off how the Player interacts with their environment when it comes to a door, objects, and switches.
+
+PlayerUserControl.cs
+A generic User interface that accepts different types of Player Controls based off the PlayerController, which will change the actions of the mouse buttons.
+
+PlayerInventory.cs
+Allows the Player to carry items, each item has there other set of actions that will be binded to PlayerUserControl when being interacted with in hand.

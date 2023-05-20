@@ -1,0 +1,10 @@
+This puzzle game is about controlling multiple characters simultaneously by manually assigning them actions during a recorded time frame, in order to reach to the end of the puzzle.
+
+CoreGameManager.cs
+CoreGameManager controls the states of the game. When selecting a player, then pressing 'Play,' your actions(movement and interactions) will be recorded and binded to that Player Object. When selecting another player, then pressing 'Play' all other Player Objects with recorded actions binded to it will also replay the actions that you gave them.
+
+PathFinderManager.cs
+Player movement is based off the Shortest path problem Path finding algorithm. It works based off mouse picking a tile on a playable surface, and the player would move there. It is all in real-time so, clicking multiple places will change to the path to the latest click.
+
+PuzzlePlayer.cs
+The Puzzle Player is the object where all the recorded movement is binded to. It has states showing the progression of completing the recorded task. If other Player objects have changed the environment, and causes obstruction to the Player object during the replay state, it will not continue the replay and be in an Idle state with an indictator saying that it has not completed the replay properly.
